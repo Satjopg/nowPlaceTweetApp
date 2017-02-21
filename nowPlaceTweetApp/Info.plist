@@ -27,6 +27,8 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+		<string>location-services</string>
+		<string>gps</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
@@ -41,5 +43,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>位置情報を使用してツイートさせて!!</string>
 </dict>
 </plist>
