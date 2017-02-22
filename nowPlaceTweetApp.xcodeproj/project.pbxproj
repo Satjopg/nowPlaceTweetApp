@@ -14,6 +14,11 @@
 		604AC70A1E56CA6C00CDD525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604AC7091E56CA6C00CDD525 /* Assets.xcassets */; };
 		604AC70D1E56CA6C00CDD525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604AC70B1E56CA6C00CDD525 /* LaunchScreen.storyboard */; };
 		604AC7151E56D0DE00CDD525 /* color_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604AC7141E56D0DE00CDD525 /* color_helper.swift */; };
+		605F56B51E5D51F300209954 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605F56B21E5D51F300209954 /* Realm.framework */; };
+		605F56B61E5D51F300209954 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605F56B31E5D51F300209954 /* RealmSwift.framework */; };
+		606EBB0A1E5C617200654AFD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606EBB091E5C617200654AFD /* Alamofire.framework */; };
+		606EBB0C1E5C617800654AFD /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606EBB0B1E5C617800654AFD /* AlamofireImage.framework */; };
+		606EBB121E5C618800654AFD /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606EBB111E5C618800654AFD /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,14 @@
 		604AC70C1E56CA6C00CDD525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		604AC70E1E56CA6C00CDD525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		604AC7141E56D0DE00CDD525 /* color_helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = color_helper.swift; sourceTree = "<group>"; };
+		605F56B11E5D51F300209954 /* ENSwiftSideMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ENSwiftSideMenu.framework; path = "Pods/../build/Debug-iphoneos/ENSwiftSideMenu/ENSwiftSideMenu.framework"; sourceTree = "<group>"; };
+		605F56B21E5D51F300209954 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
+		605F56B31E5D51F300209954 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		606EBB091E5C617200654AFD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../Library/Developer/Xcode/DerivedData/nowPlaceTweetApp-adbfbgpaeqfllffdagqjgyjkjlmn/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		606EBB0B1E5C617800654AFD /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "../Library/Developer/Xcode/DerivedData/nowPlaceTweetApp-adbfbgpaeqfllffdagqjgyjkjlmn/Build/Products/Debug-iphoneos/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
+		606EBB0D1E5C617D00654AFD /* ENSwiftSideMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ENSwiftSideMenu.framework; path = "Pods/../build/Debug-iphoneos/ENSwiftSideMenu/ENSwiftSideMenu.framework"; sourceTree = "<group>"; };
+		606EBB0F1E5C618300654AFD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
+		606EBB111E5C618800654AFD /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../Library/Developer/Xcode/DerivedData/nowPlaceTweetApp-adbfbgpaeqfllffdagqjgyjkjlmn/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		E11C77447BCA350A75DC1EA9 /* Pods-nowPlaceTweetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nowPlaceTweetApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nowPlaceTweetApp/Pods-nowPlaceTweetApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F3E50FD6FC7382C1DA6F2FD1 /* Pods_nowPlaceTweetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nowPlaceTweetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFEB05D83EE031504C1ED71 /* Pods-nowPlaceTweetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nowPlaceTweetApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-nowPlaceTweetApp/Pods-nowPlaceTweetApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -35,6 +48,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605F56B51E5D51F300209954 /* Realm.framework in Frameworks */,
+				605F56B61E5D51F300209954 /* RealmSwift.framework in Frameworks */,
+				606EBB121E5C618800654AFD /* SwiftyJSON.framework in Frameworks */,
+				606EBB0C1E5C617800654AFD /* AlamofireImage.framework in Frameworks */,
+				606EBB0A1E5C617200654AFD /* Alamofire.framework in Frameworks */,
 				2378F0DFB2E1979EF2CEA4C2 /* Pods_nowPlaceTweetApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +63,14 @@
 		6002204A3787C7FBD21A9F88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				605F56B11E5D51F300209954 /* ENSwiftSideMenu.framework */,
+				605F56B21E5D51F300209954 /* Realm.framework */,
+				605F56B31E5D51F300209954 /* RealmSwift.framework */,
+				606EBB111E5C618800654AFD /* SwiftyJSON.framework */,
+				606EBB0F1E5C618300654AFD /* Realm.framework */,
+				606EBB0D1E5C617D00654AFD /* ENSwiftSideMenu.framework */,
+				606EBB0B1E5C617800654AFD /* AlamofireImage.framework */,
+				606EBB091E5C617200654AFD /* Alamofire.framework */,
 				F3E50FD6FC7382C1DA6F2FD1 /* Pods_nowPlaceTweetApp.framework */,
 			);
 			name = Frameworks;
@@ -345,6 +371,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JLFHLJHHST;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ENSwiftSideMenu",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+				);
 				INFOPLIST_FILE = nowPlaceTweetApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.myapp.nowPlaceTweetApp;
@@ -360,6 +392,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JLFHLJHHST;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ENSwiftSideMenu",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+				);
 				INFOPLIST_FILE = nowPlaceTweetApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.myapp.nowPlaceTweetApp;

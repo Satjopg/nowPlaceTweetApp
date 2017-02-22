@@ -10,6 +10,5 @@ target 'nowPlaceTweetApp' do
   pod 'SwiftyJSON'
   pod "AlamofireImage", '~> 3.0'
   pod 'Alamofire', '~> 4.0.1'
-  pod "TextFieldEffects"
-  pod 'REFrostedViewController'
+  pod 'RealmSwift'
 end
