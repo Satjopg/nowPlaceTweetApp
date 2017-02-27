@@ -8,7 +8,13 @@
 
 import UIKit
 
-// 例, hex:"FF1493"
+/**
+ カラーコードをUIColorの値に変換する.
+ 
+ - parameter hex: カラーコード(例:#000000)
+ 
+ - returns: UIColorへの変換値
+ */
 func rgb_change_uicolor(_ hex:String) -> UIColor {
     
     let cString = hex.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()

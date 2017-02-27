@@ -8,15 +8,20 @@
 
 import UIKit
 import CoreLocation
+import RealmSwift
 
 class ViewController: UIViewController, CLLocationManagerDelegate{
     
     var myLocationManager:CLLocationManager!
+    var myRealm:placehistory!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Realmのファイルが保存される場所を表示しておかないと大変ですぜ
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
         
+        // 位置情報取得の許可が取れているかを確認
         let status = CLLocationManager.authorizationStatus()
         if status == CLAuthorizationStatus.restricted || status == CLAuthorizationStatus.denied {
             return
@@ -35,7 +40,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         
         myLocationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         myLocationManager.distanceFilter = 100
-        myLocationManager.startUpdatingLocation()
+        
+        //myLocationManager.startUpdatingLocation()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,8 +52,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     
     // 位置情報取得成功時に呼ばれます
     func locationManager(_ manager: CLLocationManager,didUpdateLocations locations: [CLLocation]){
-        print("緯度：\(manager.location?.coordinate.latitude)")
-        print("経度：\(manager.location?.coordinate.longitude)")
+        let lat:Double = (manager.location?.coordinate.latitude)!
+        let log:Double = (manager.location?.coordinate.longitude)!
+        print("緯度：\(lat)")
+        print("経度：\(log)")
+        myLocationManager.stopUpdatingLocation()
+        /**
+        myRealm = placehistory(value: ["id":Int(1), "latitude":lat, "longitude":log])
+        let realm = try! Realm()
+        // トランザクションを開始して、オブジェクトをRealmに追加する
+        try! realm.write {
+            realm.add(myRealm)
+            print("お、できたんじゃね？")
+        }
+ **/
     }
     
     // 位置情報取得失敗時に呼ばれます
