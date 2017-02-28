@@ -41,7 +41,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         myLocationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         myLocationManager.distanceFilter = 100
         
-        //myLocationManager.startUpdatingLocation()
+        myLocationManager.startUpdatingLocation()
         
     }
 
@@ -57,6 +57,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         print("緯度：\(lat)")
         print("経度：\(log)")
         myLocationManager.stopUpdatingLocation()
+        get_place_info(latitude: lat, longitude: log)
         /**
         myRealm = placehistory(value: ["id":Int(1), "latitude":lat, "longitude":log])
         let realm = try! Realm()

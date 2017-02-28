@@ -10,9 +10,10 @@ import Foundation
 import RealmSwift
 
 class user:Object {
-    dynamic var id = 0
+    dynamic var id = ""
     dynamic var name:String? = ""
-    dynamic var login:Int = 1
+    dynamic var login_count:Int = 1
+    dynamic var login_date:String = ""
     
     override static func primaryKey() -> String? {
         return "id"
