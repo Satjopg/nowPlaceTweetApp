@@ -9,6 +9,17 @@
 import Foundation
 import RealmSwift
 
-func create() {
+// placeHistoryモデルの値を生成する.
+func create(latitude:Double, longitude:Double) {
+    let place_value = placehistory(value: ["id":Int(1), "latitude":latitude, "longitude":longitude])
+
+}
+
+func save() {
+    
+}
+
+// idを割り振る.
+private func create_id() {
     
 }
