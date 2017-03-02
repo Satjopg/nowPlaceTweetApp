@@ -49,10 +49,7 @@ class user_Controller {
     
     /**
      
-    指定したIDのuserが登録されているかを返すメソッド
-     
-    - parameters:
-        - id: userに割り振ったID(UUID)
+    userが登録されているかを返すメソッド
     - returns: 存在 -> T いない -> F
     */
     func exist_user() -> Bool {
@@ -60,6 +57,20 @@ class user_Controller {
             return true
         }else{
             return false
+        }
+    }
+    
+    /**
+     
+     userデータを取得します.できなければuserの値にnilを入れているので注意！！
+     
+     - returns: 存在 -> T いない -> F, user or nil
+     */
+    func get_user() -> (Bool, user?) {
+        if let user_value = realm.object(ofType: user.self, forPrimaryKey: get_id()) {
+            return (true, user_value)
+        } else {
+            return (false, nil)
         }
     }
     
