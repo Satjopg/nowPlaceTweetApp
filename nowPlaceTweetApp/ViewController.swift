@@ -13,11 +13,10 @@ import RealmSwift
 class ViewController: UIViewController, CLLocationManagerDelegate{
     
     var myLocationManager:CLLocationManager!
-    var myRealm:placehistory!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Realmのファイルが保存される場所を表示しておかないと大変ですぜ
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         
@@ -58,15 +57,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         print("経度：\(log)")
         myLocationManager.stopUpdatingLocation()
         get_place_info(latitude: lat, longitude: log)
-        /**
-        myRealm = placehistory(value: ["id":Int(1), "latitude":lat, "longitude":log])
-        let realm = try! Realm()
-        // トランザクションを開始して、オブジェクトをRealmに追加する
-        try! realm.write {
-            realm.add(myRealm)
-            print("お、できたんじゃね？")
-        }
- **/
     }
     
     // 位置情報取得失敗時に呼ばれます

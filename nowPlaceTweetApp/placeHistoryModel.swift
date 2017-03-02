@@ -15,4 +15,8 @@ class placehistory:Object {
     dynamic var latitude:Double = 0.0
     dynamic var longitude:Double = 0.0
     dynamic var time_stamp:String = ""
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }
