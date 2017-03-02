@@ -13,6 +13,7 @@
 		602A04B41E65152800B17783 /* place_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A04B31E65152800B17783 /* place_helper.swift */; };
 		602A04B61E65180700B17783 /* place_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A04B51E65180700B17783 /* place_controller.swift */; };
 		602A04B81E6837CC00B17783 /* user_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A04B71E6837CC00B17783 /* user_helper.swift */; };
+		602A04BC1E687B5D00B17783 /* userformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A04BB1E687B5D00B17783 /* userformViewController.swift */; };
 		604AC7031E56CA6C00CDD525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604AC7021E56CA6C00CDD525 /* AppDelegate.swift */; };
 		604AC7051E56CA6C00CDD525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604AC7041E56CA6C00CDD525 /* ViewController.swift */; };
 		604AC7081E56CA6C00CDD525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604AC7061E56CA6C00CDD525 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		602A04B31E65152800B17783 /* place_helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = place_helper.swift; sourceTree = "<group>"; };
 		602A04B51E65180700B17783 /* place_controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = place_controller.swift; sourceTree = "<group>"; };
 		602A04B71E6837CC00B17783 /* user_helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user_helper.swift; sourceTree = "<group>"; };
+		602A04BB1E687B5D00B17783 /* userformViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userformViewController.swift; sourceTree = "<group>"; };
 		604AC6FF1E56CA6C00CDD525 /* nowPlaceTweetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nowPlaceTweetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		604AC7021E56CA6C00CDD525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		604AC7041E56CA6C00CDD525 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				602A04AF1E644D1700B17783 /* id_helper.swift */,
 				604AC7141E56D0DE00CDD525 /* color_helper.swift */,
 				604AC7041E56CA6C00CDD525 /* ViewController.swift */,
+				602A04BB1E687B5D00B17783 /* userformViewController.swift */,
 				604AC7061E56CA6C00CDD525 /* Main.storyboard */,
 				604AC7091E56CA6C00CDD525 /* Assets.xcassets */,
 				604AC70B1E56CA6C00CDD525 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60FB74D61E64419100F9A5FA /* userModel.swift in Sources */,
+				602A04BC1E687B5D00B17783 /* userformViewController.swift in Sources */,
 				602A04B61E65180700B17783 /* place_controller.swift in Sources */,
 				602A04B81E6837CC00B17783 /* user_helper.swift in Sources */,
 				602A04B41E65152800B17783 /* place_helper.swift in Sources */,

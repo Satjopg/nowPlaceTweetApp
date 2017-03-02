@@ -7,15 +7,34 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    // 初回起動時のみ呼び出されるよ
+    // 初回起動時のみ呼び出される
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let user_controller:user_Controller = user_Controller()
+        
+        // userが登録されているかを確認
+        if user_controller.exist_user() {
+            // 書かなくても良いけど一応明示しておく.
+            return true
+        } else {
+            // form画面を表示するように設定
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialviewController = storyboard.instantiateViewController(withIdentifier: "formVC")
+            
+            // 画面生成して、form画面を最初に持ってきて、見えるようにする.
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.rootViewController = initialviewController
+            window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 

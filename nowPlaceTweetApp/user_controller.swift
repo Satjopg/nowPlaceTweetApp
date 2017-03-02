@@ -11,26 +11,32 @@ import RealmSwift
 
 class user_Controller {
     
-    static func create() -> user {
-        let controller = user_Controller()
-        let user_value:[String:Any] = ["id":create_id(controller)(), "login_count":Int(1), "login_date":get_date(controller)()]
+    private let realm = try! Realm()
+    
+    func create() -> user {
+        let user_value:[String:Any] = ["id":get_id(), "login_count":Int(1), "login_date":get_date()]
         return user(value: user_value)
     }
     
-    static func save(user_value:user) {
+    func save(user_value:user) {
         do {
-            let realm = try! Realm()
             try! realm.write {
                 realm.add(user_value, update: true)
             }
         }
     }
     
-    static func update_date(id:String) {
-        let realm = try! Realm()
-        let controller = user_Controller()
+    /**
+     
+     指定したIDのuserがログインした日時を更新する
+     
+     - parameters:
+        - id: userに割り振ったID(UUID->Hashids)
+     
+     */
+    func update_date(id:String) {
         if let user_value = realm.object(ofType: user.self, forPrimaryKey: id) {
-            user_value.login_date = get_date(controller)()
+            user_value.login_date = get_date()
             do{
                 try! realm.write {
                     realm.add(user_value, update: true)
@@ -41,8 +47,24 @@ class user_Controller {
         }
     }
     
-    // IDを割り振る(UUIDの利用)
-    private func create_id() -> String {
+    /**
+     
+    指定したIDのuserが登録されているかを返すメソッド
+     
+    - parameters:
+        - id: userに割り振ったID(UUID)
+    - returns: 存在 -> T いない -> F
+    */
+    func exist_user() -> Bool {
+        if realm.object(ofType: user.self, forPrimaryKey: get_id()) != nil {
+            return true
+        }else{
+            return false
+        }
+    }
+    
+    // IDの取得(作り出しているわけではないのでgetと命名)
+    private func get_id() -> String {
         let hashids = Hashids(salt: NSUUID().uuidString)
         return hashids.encode(1,2,3)! as String
     }
