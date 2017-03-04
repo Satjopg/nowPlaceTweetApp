@@ -20,6 +20,7 @@
 		604AC70A1E56CA6C00CDD525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604AC7091E56CA6C00CDD525 /* Assets.xcassets */; };
 		604AC70D1E56CA6C00CDD525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604AC70B1E56CA6C00CDD525 /* LaunchScreen.storyboard */; };
 		604AC7151E56D0DE00CDD525 /* color_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604AC7141E56D0DE00CDD525 /* color_helper.swift */; };
+		6057D66A1E6B2761008759C0 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6057D6691E6B2761008759C0 /* Material.framework */; };
 		605F56B51E5D51F300209954 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605F56B21E5D51F300209954 /* Realm.framework */; };
 		605F56B61E5D51F300209954 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605F56B31E5D51F300209954 /* RealmSwift.framework */; };
 		606EBB0A1E5C617200654AFD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606EBB091E5C617200654AFD /* Alamofire.framework */; };
@@ -44,6 +45,7 @@
 		604AC70C1E56CA6C00CDD525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		604AC70E1E56CA6C00CDD525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		604AC7141E56D0DE00CDD525 /* color_helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = color_helper.swift; sourceTree = "<group>"; };
+		6057D6691E6B2761008759C0 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = "Pods/../build/Debug-iphoneos/Material/Material.framework"; sourceTree = "<group>"; };
 		605F56B11E5D51F300209954 /* ENSwiftSideMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ENSwiftSideMenu.framework; path = "Pods/../build/Debug-iphoneos/ENSwiftSideMenu/ENSwiftSideMenu.framework"; sourceTree = "<group>"; };
 		605F56B21E5D51F300209954 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
 		605F56B31E5D51F300209954 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		606EBB0F1E5C618300654AFD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
 		606EBB111E5C618800654AFD /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../Library/Developer/Xcode/DerivedData/nowPlaceTweetApp-adbfbgpaeqfllffdagqjgyjkjlmn/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		60B815051E5D5DA5005F953A /* placeHistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = placeHistoryModel.swift; sourceTree = "<group>"; };
+		60BB725A1E6B18A6007B6D94 /* TextFieldEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextFieldEffects.framework; path = "../Library/Developer/Xcode/DerivedData/nowPlaceTweetApp-adbfbgpaeqfllffdagqjgyjkjlmn/Build/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework"; sourceTree = "<group>"; };
 		60FB74D51E64419100F9A5FA /* userModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
 		E11C77447BCA350A75DC1EA9 /* Pods-nowPlaceTweetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nowPlaceTweetApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nowPlaceTweetApp/Pods-nowPlaceTweetApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F3E50FD6FC7382C1DA6F2FD1 /* Pods_nowPlaceTweetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nowPlaceTweetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6057D66A1E6B2761008759C0 /* Material.framework in Frameworks */,
 				605F56B51E5D51F300209954 /* Realm.framework in Frameworks */,
 				605F56B61E5D51F300209954 /* RealmSwift.framework in Frameworks */,
 				606EBB121E5C618800654AFD /* SwiftyJSON.framework in Frameworks */,
@@ -79,6 +83,8 @@
 		6002204A3787C7FBD21A9F88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6057D6691E6B2761008759C0 /* Material.framework */,
+				60BB725A1E6B18A6007B6D94 /* TextFieldEffects.framework */,
 				605F56B11E5D51F300209954 /* ENSwiftSideMenu.framework */,
 				605F56B21E5D51F300209954 /* Realm.framework */,
 				605F56B31E5D51F300209954 /* RealmSwift.framework */,
@@ -408,6 +414,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ENSwiftSideMenu",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Material",
 				);
 				INFOPLIST_FILE = nowPlaceTweetApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -430,6 +437,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ENSwiftSideMenu",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Material",
 				);
 				INFOPLIST_FILE = nowPlaceTweetApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

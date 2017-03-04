@@ -7,11 +7,20 @@
 //
 
 import UIKit
+import Material
 
 class userformViewController: UIViewController {
-
+    
+    @IBOutlet weak var nameField: TextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameField.isClearIconButtonEnabled = true
+        
+        let left = UIImageView()
+        left.image = Icon.cm.pen
+        nameField.leftView = left
 
         // Do any additional setup after loading the view.
     }
