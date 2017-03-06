@@ -17,6 +17,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setup_backgroundcolor(viewcontroller: self)
+        
         // Realmのファイルが保存される場所を表示しておかないと大変ですぜ
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         

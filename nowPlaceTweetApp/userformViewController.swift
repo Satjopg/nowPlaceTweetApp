@@ -20,6 +20,7 @@ class userformViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setup_backgroundcolor(viewcontroller: self)
         startLabel_setup()
         namefieled_setup()
         doneButton_setup()

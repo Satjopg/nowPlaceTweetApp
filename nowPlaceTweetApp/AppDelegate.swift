@@ -20,11 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let user_controller:user_Controller = user_Controller()
-        let mynavigationcontroller = NavigationController.init(rootViewController: ViewController())
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = Color.amber.lighten5
-        window?.rootViewController = mynavigationcontroller
-        window?.makeKeyAndVisible()
 
         // userが登録されているかを確認
         if user_controller.exist_user() {
