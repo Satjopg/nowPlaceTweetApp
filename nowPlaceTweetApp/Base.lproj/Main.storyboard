@@ -27,10 +27,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UGi-yR-m2M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="612.5" y="-928.5"/>
+            <point key="canvasLocation" x="1277" y="-910"/>
         </scene>
         <!--Userform View Controller-->
         <scene sceneID="gZZ-9V-2EF">
@@ -40,13 +41,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="form予定地" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="53R-jH-Jof">
-                                <rect key="frame" x="85" y="282" width="204" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" id="M2a-dt-7la" customClass="TextField" customModule="Material">
                                 <rect key="frame" x="16" y="178" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -58,16 +52,36 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="detail" value="Please given your name!!"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Start up Page !!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="53R-jH-Jof">
+                                <rect key="frame" x="53" y="20" width="295" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A7X-g7-hR9" customClass="FlatButton" customModule="Material">
+                                <rect key="frame" x="107" y="332" width="161" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.42989203191733094" green="0.5296555493055759" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="1" green="0.98985294883741426" blue="0.94937389169682773" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" identifier="toTopSegue" modalTransitionStyle="crossDissolve" id="phJ-lj-far"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XWK-LH-Ngl"/>
                     <connections>
+                        <outlet property="doneButton" destination="A7X-g7-hR9" id="eSw-1D-ihM"/>
                         <outlet property="nameField" destination="M2a-dt-7la" id="hCl-VR-Mi3"/>
+                        <outlet property="startLabel" destination="53R-jH-Jof" id="hbE-CC-2kN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeN-SC-hEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="612.5" y="-138.5"/>
+            <point key="canvasLocation" x="785.5" y="-143.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

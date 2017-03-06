@@ -9,20 +9,20 @@
 import UIKit
 import Material
 
+/// 初回起動時のみ表示される
 class userformViewController: UIViewController {
     
+    // 画面に表示される部品
     @IBOutlet weak var nameField: TextField!
+    @IBOutlet weak var startLabel: UILabel!
+    @IBOutlet weak var doneButton: FlatButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameField.isClearIconButtonEnabled = true
-        
-        let left = UIImageView()
-        left.image = Icon.cm.pen
-        nameField.leftView = left
-
-        // Do any additional setup after loading the view.
+        startLabel_setup()
+        namefieled_setup()
+        doneButton_setup()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +30,23 @@ class userformViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    private func startLabel_setup() {
+        startLabel.font = RobotoFont.bold(with: 35)
+        startLabel.textColor = Color.indigo.darken3
+    }
+    
+    private func doneButton_setup() {
+        doneButton.titleLabel?.font = RobotoFont.bold(with: 20)
+        doneButton.layer.cornerRadius = 10.0
+        doneButton.layer.masksToBounds = true
+    }
+    
+    private func namefieled_setup() {
+        nameField.isClearIconButtonEnabled = true
+        let left = UIImageView()
+        left.image = Icon.cm.pen
+        nameField.leftView = left
+    }
     /*
     // MARK: - Navigation
 
