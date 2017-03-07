@@ -27,6 +27,7 @@
 		606EBB0C1E5C617800654AFD /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606EBB0B1E5C617800654AFD /* AlamofireImage.framework */; };
 		606EBB121E5C618800654AFD /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606EBB111E5C618800654AFD /* SwiftyJSON.framework */; };
 		60745E341E6DB4FA00E16976 /* application_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60745E331E6DB4FA00E16976 /* application_helper.swift */; };
+		60745E361E6E9F1D00E16976 /* musicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60745E351E6E9F1D00E16976 /* musicViewController.swift */; };
 		60B815061E5D5DA5005F953A /* placeHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B815051E5D5DA5005F953A /* placeHistoryModel.swift */; };
 		60FB74D61E64419100F9A5FA /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FB74D51E64419100F9A5FA /* userModel.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		606EBB0F1E5C618300654AFD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
 		606EBB111E5C618800654AFD /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../Library/Developer/Xcode/DerivedData/nowPlaceTweetApp-adbfbgpaeqfllffdagqjgyjkjlmn/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		60745E331E6DB4FA00E16976 /* application_helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = application_helper.swift; sourceTree = "<group>"; };
+		60745E351E6E9F1D00E16976 /* musicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = musicViewController.swift; sourceTree = "<group>"; };
 		60B815051E5D5DA5005F953A /* placeHistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = placeHistoryModel.swift; sourceTree = "<group>"; };
 		60BB725A1E6B18A6007B6D94 /* TextFieldEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextFieldEffects.framework; path = "../Library/Developer/Xcode/DerivedData/nowPlaceTweetApp-adbfbgpaeqfllffdagqjgyjkjlmn/Build/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework"; sourceTree = "<group>"; };
 		60FB74D51E64419100F9A5FA /* userModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
@@ -131,8 +133,9 @@
 				602A04B71E6837CC00B17783 /* user_helper.swift */,
 				602A04AF1E644D1700B17783 /* id_helper.swift */,
 				604AC7141E56D0DE00CDD525 /* color_helper.swift */,
-				604AC7041E56CA6C00CDD525 /* ViewController.swift */,
 				602A04BB1E687B5D00B17783 /* userformViewController.swift */,
+				604AC7041E56CA6C00CDD525 /* ViewController.swift */,
+				60745E351E6E9F1D00E16976 /* musicViewController.swift */,
 				604AC7061E56CA6C00CDD525 /* Main.storyboard */,
 				604AC7091E56CA6C00CDD525 /* Assets.xcassets */,
 				604AC70B1E56CA6C00CDD525 /* LaunchScreen.storyboard */,
@@ -278,6 +281,7 @@
 				602A04BC1E687B5D00B17783 /* userformViewController.swift in Sources */,
 				602A04B61E65180700B17783 /* place_controller.swift in Sources */,
 				602A04B81E6837CC00B17783 /* user_helper.swift in Sources */,
+				60745E361E6E9F1D00E16976 /* musicViewController.swift in Sources */,
 				602A04B41E65152800B17783 /* place_helper.swift in Sources */,
 				604AC7051E56CA6C00CDD525 /* ViewController.swift in Sources */,
 				602A04B21E64581C00B17783 /* user_controller.swift in Sources */,

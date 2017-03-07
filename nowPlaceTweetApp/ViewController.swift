@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import RealmSwift
+import Material
 
 class ViewController: UIViewController, CLLocationManagerDelegate{
     
@@ -16,12 +17,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setup_navigationbar(viewcontroller: self)
         setup_backgroundcolor(viewcontroller: self)
         
         // Realmのファイルが保存される場所を表示しておかないと大変ですぜ
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         
+        self.tabBarItem = UITabBarItem(title: "Location", image: Icon.place, tag: 0)
+
+        /*
         // 位置情報取得の許可が取れているかを確認
         let status = CLLocationManager.authorizationStatus()
         if status == CLAuthorizationStatus.restricted || status == CLAuthorizationStatus.denied {
@@ -43,7 +47,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         myLocationManager.distanceFilter = 100
         
         myLocationManager.startUpdatingLocation()
-        
+        */
     }
 
     override func didReceiveMemoryWarning() {
