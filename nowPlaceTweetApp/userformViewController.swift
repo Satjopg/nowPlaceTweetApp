@@ -8,6 +8,7 @@
 
 import UIKit
 import Material
+import TwitterKit
 
 /// 初回起動時のみ表示される
 class userformViewController: UIViewController {

@@ -18,8 +18,29 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>48c458ce0698c706ea5f8ce7a6edb85174de6e20</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>consumerKey</key>
+					<string>GcT0GQenam88a6IcS03Qv7ae5</string>
+					<key>consumerSecret</key>
+					<string>Cvmr1Mcmz3KTi7F1X0wk9KU4rul2QYA5aTc06EQNuAN4WYKBcL</string>
+				</dict>
+				<key>KitName</key>
+				<string>Twitter</string>
+			</dict>
+		</array>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>位置情報を使用してツイートさせて!!</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -43,7 +64,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>位置情報を使用してツイートさせて!!</string>
 </dict>
 </plist>

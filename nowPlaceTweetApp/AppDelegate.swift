@@ -20,6 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let user_controller:user_Controller = user_Controller()
         
+        let ac = get_twitter_account()
+        for acc in ac {
+            print(acc.username)
+        }
+
         window = UIWindow(frame: UIScreen.main.bounds)
         
         // userが登録されているかを確認

@@ -12,4 +12,7 @@ target 'nowPlaceTweetApp' do
   pod 'Alamofire', '~> 4.0.1'
   pod 'RealmSwift'
   pod "Material"
+  pod 'Fabric'
+  pod 'TwitterKit'
+  pod 'TwitterCore'
 end

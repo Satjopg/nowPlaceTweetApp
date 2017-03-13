@@ -29,6 +29,7 @@
 		60745E341E6DB4FA00E16976 /* application_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60745E331E6DB4FA00E16976 /* application_helper.swift */; };
 		60745E361E6E9F1D00E16976 /* musicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60745E351E6E9F1D00E16976 /* musicViewController.swift */; };
 		60B815061E5D5DA5005F953A /* placeHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B815051E5D5DA5005F953A /* placeHistoryModel.swift */; };
+		60C946B81E75B62700645B1F /* twitter_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C946B71E75B62700645B1F /* twitter_helper.swift */; };
 		60FB74D61E64419100F9A5FA /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FB74D51E64419100F9A5FA /* userModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		60745E351E6E9F1D00E16976 /* musicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = musicViewController.swift; sourceTree = "<group>"; };
 		60B815051E5D5DA5005F953A /* placeHistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = placeHistoryModel.swift; sourceTree = "<group>"; };
 		60BB725A1E6B18A6007B6D94 /* TextFieldEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextFieldEffects.framework; path = "../Library/Developer/Xcode/DerivedData/nowPlaceTweetApp-adbfbgpaeqfllffdagqjgyjkjlmn/Build/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework"; sourceTree = "<group>"; };
+		60C946B71E75B62700645B1F /* twitter_helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = twitter_helper.swift; sourceTree = "<group>"; };
 		60FB74D51E64419100F9A5FA /* userModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
 		E11C77447BCA350A75DC1EA9 /* Pods-nowPlaceTweetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nowPlaceTweetApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nowPlaceTweetApp/Pods-nowPlaceTweetApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F3E50FD6FC7382C1DA6F2FD1 /* Pods_nowPlaceTweetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nowPlaceTweetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				602A04B11E64581C00B17783 /* user_controller.swift */,
 				602A04B31E65152800B17783 /* place_helper.swift */,
 				602A04B71E6837CC00B17783 /* user_helper.swift */,
+				60C946B71E75B62700645B1F /* twitter_helper.swift */,
 				602A04AF1E644D1700B17783 /* id_helper.swift */,
 				604AC7141E56D0DE00CDD525 /* color_helper.swift */,
 				602A04BB1E687B5D00B17783 /* userformViewController.swift */,
@@ -237,7 +240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nowPlaceTweetApp/Pods-nowPlaceTweetApp-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nowPlaceTweetApp/Pods-nowPlaceTweetApp-resources.sh\"\n\"${PODS_ROOT}/Fabric/run\" 48c458ce0698c706ea5f8ce7a6edb85174de6e20 710a57f6b0161062236a389e83995557956f4eaff28b4ce33a461695cf321182";
 			showEnvVarsInLog = 0;
 		};
 		ED9F5E5D3E24044A763B4F74 /* [CP] Check Pods Manifest.lock */ = {
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60FB74D61E64419100F9A5FA /* userModel.swift in Sources */,
+				60C946B81E75B62700645B1F /* twitter_helper.swift in Sources */,
 				602A04BC1E687B5D00B17783 /* userformViewController.swift in Sources */,
 				602A04B61E65180700B17783 /* place_controller.swift in Sources */,
 				602A04B81E6837CC00B17783 /* user_helper.swift in Sources */,
@@ -425,6 +429,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Material",
 				);
 				INFOPLIST_FILE = nowPlaceTweetApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.myapp.nowPlaceTweetApp;
@@ -448,6 +453,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Material",
 				);
 				INFOPLIST_FILE = nowPlaceTweetApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.myapp.nowPlaceTweetApp;
