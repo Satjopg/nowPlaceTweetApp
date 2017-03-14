@@ -39,7 +39,7 @@ class userformViewController: UIViewController {
     
     private func doneButton_setup() {
         doneButton.titleLabel?.font = RobotoFont.bold(with: 20)
-        doneButton.layer.cornerRadius = 10.0
+        doneButton.layer.cornerRadius = 50.0
         doneButton.layer.masksToBounds = true
     }
     

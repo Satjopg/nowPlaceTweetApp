@@ -20,9 +20,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         setup_navigationbar(viewcontroller: self)
         setup_backgroundcolor(viewcontroller: self)
         
-        // Realmのファイルが保存される場所を表示しておかないと大変ですぜ
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
-        
         self.tabBarItem = UITabBarItem(title: "Location", image: Icon.place, tag: 0)
 
         /*

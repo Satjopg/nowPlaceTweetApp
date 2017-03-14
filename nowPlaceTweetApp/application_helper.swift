@@ -27,4 +27,6 @@ func setup_tabbar_views() -> [UIViewController] {
 func setup_navigationbar(viewcontroller:UIViewController) {
     viewcontroller.navigationController?.navigationBar.barTintColor = Color.grey.lighten3
     viewcontroller.navigationItem.leftBarButtonItem = UIBarButtonItem(image: Icon.menu, style: .plain, target: nil, action: nil)
+    viewcontroller.navigationItem.rightBarButtonItem = UIBarButtonItem(image: Icon.moreHorizontal, style: .plain, target: nil, action: nil)
+
 }
